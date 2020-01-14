@@ -1,0 +1,15 @@
+node {
+
+	stage('Git Checkout') {
+	
+		git clone 'https://github.com/a564589/SerenityPoC'
+	
+	}
+	
+	stage('Compile and Package') {
+	
+		sh 'mvn package'
+	
+	}
+	
+}
