@@ -1,12 +1,12 @@
 node {
 
-	stage('Git Checkout') {
+	stage('SCM Checkout') {
 	
-		git clone 'https://github.com/a564589/SerenityPoC'
+		git 'https://github.com/a564589/SerenityPoC'
 	
 	}
 	
-	stage('Compile and Package') {
+	stage('Compile-Package') {
 	
 		sh 'mvn package'
 	
