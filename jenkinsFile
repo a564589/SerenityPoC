@@ -9,7 +9,7 @@ node {
 	stage('Compile-Package') {
 	
 		def mavenHome = tool name: 'Maven', type: 'maven'
-		script "${mavenHome}/bin/mvn package"
+		script "${mavenHome}\bin\mvn package"
 	
 	}
 	
