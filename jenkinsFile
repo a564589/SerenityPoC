@@ -1,8 +1,8 @@
 node {
-
-	echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+	
 	stage('SCM Checkout') {
 	
+		echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
 		git 'https://github.com/a564589/SerenityPoC'
 	
 	}
